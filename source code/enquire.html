@@ -1,55 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maryan Ahmed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
 
-<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+<body>
 
-    <fieldset>
-        <legend>Your details</legend>
+<header class="site-header">
+    <h1 class="logo">Your Website</h1>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="enquire.html" class="active">Enquire</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="enhancements.html">Enhancements</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content enquiry-page">
+    <h1>Enquiry Form</h1>
+    <p>Please complete the form below to enquire about our products.</p>
+
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+        <fieldset>
+            <legend>Your details</legend>
+
+            <p>
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" name="firstname" maxlength="25" pattern="[A-Za-z ]{1,25}" required>
+            </p>
+
+            <p>
+                <label for="lastname">Last name:</label>
+                <input type="text" id="lastname" name="lastname" maxlength="25" pattern="[A-Za-z ]{1,25}" required>
+            </p>
+
+            <p>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <p>
+                <label for="address">Street address:</label>
+                <input type="text" id="address" name="address" maxlength="40" required>
+            </p>
+
+            <p>
+                <label for="suburb">Suburb/town:</label>
+                <input type="text" id="suburb" name="suburb" maxlength="20" required>
+            </p>
+
+            <p>
+                <label for="state">State:</label>
+                <select id="state" name="state" required>
+                    <option value="">Please select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" maxlength="4" pattern="\d{4}" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone number:</label>
+                <input type="text" id="phone" name="phone" maxlength="10" pattern="\d{10}" placeholder="0412345678" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred contact</legend>
+
+            <p>
+                <input type="radio" id="contact_email" name="preferred_contact" value="email" checked>
+                <label for="contact_email">Email</label>
+
+                <input type="radio" id="contact_post" name="preferred_contact" value="post">
+                <label for="contact_post">Post</label>
+
+                <input type="radio" id="contact_phone" name="preferred_contact" value="phone">
+                <label for="contact_phone">Phone</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Product details</legend>
+
+            <p>
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="">Please select</option>
+                    <option value="standard">Standard Package</option>
+                    <option value="premium">Premium Package</option>
+                    <option value="deluxe">Deluxe Package</option>
+                </select>
+            </p>
+
+            <p>Product features:</p>
+
+            <p class="feature-options">
+                <input type="checkbox" id="feature1" name="features[]" value="feature1" checked>
+                <label for="feature1">Feature 1</label>
+
+                <input type="checkbox" id="feature2" name="features[]" value="feature2">
+                <label for="feature2">Feature 2</label>
+
+                <input type="checkbox" id="feature3" name="features[]" value="feature3">
+                <label for="feature3">Feature 3</label>
+            </p>
+
+            <p>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" placeholder="Add any details you want us to know."></textarea>
+            </p>
+        </fieldset>
 
         <p>
-            <label for="firstname">First name:</label>
-            <input type="text" id="firstname" name="firstname"
-                   maxlength="25" pattern="[A-Za-z ]{1,25}" required>
+            <input type="submit" value="Submit Enquiry">
         </p>
 
-        <p>
-            <label for="lastname">Last name:</label>
-            <input type="text" id="lastname" name="lastname"
-                   maxlength="25" pattern="[A-Za-z ]{1,25}" required>
-        </p>
+    </form>
 
-        <p>
-            <label for="email">Email address:</label>
-            <input type="email" id="email" name="email" required>
-        </p>
-    </fieldset>
+</main>
 
-    <fieldset>
-        <legend>Address</legend>
+<footer class="site-footer">
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+</footer>
 
-        <p>
-            <label for="address">Street address:</label>
-            <input type="text" id="address" name="address"
-                   maxlength="40" required>
-        </p>
-
-        <p>
-            <label for="suburb">Suburb:</label>
-            <input type="text" id="suburb" name="suburb"
-                   maxlength="20" required>
-        </p>
-
-        <p>
-            <label for="state">State:</label>
-            <select id="state" name="state" required>
-                <option value="">Please select</option>
-                <option value="VIC">VIC</option>
-                <option value="NSW">NSW</option>
-                <option value="QLD">QLD</option>
-                <option value="NT">NT</option>
-                <option value="WA">WA</option>
-                <option value="SA">SA</option>
-                <option value="TAS">TAS</option>
-                <option value="ACT">ACT</option>
-            </select>
-        </p>
-
-</form>
+</body>
+</html>
