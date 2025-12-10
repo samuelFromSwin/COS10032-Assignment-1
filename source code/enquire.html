@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Maryan Ahmed">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry Form</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>*unnamed* AI - Enquire</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
 <header class="site-header">
-    <h1 class="logo">Your Website</h1>
+    <div class="logo">*unnamed* AI</div>
     <nav class="main-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="product.html">Product</a></li>
             <li><a href="enquire.html" class="active">Enquire</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="enhancements.html">Enhancements</a></li>
@@ -24,8 +20,12 @@
 </header>
 
 <main class="content enquiry-page">
-    <h1>Enquiry Form</h1>
-    <p>Please complete the form below to enquire about our products.</p>
+    <h1>Enquire about *unnamed* AI</h1>
+    <p>
+        Use this form to ask about the Basic, Standard or Pro plans for *unnamed* AI.
+        Tell us a little about your business and how you would like the system to help with
+        your money records and simple reports.
+    </p>
 
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
@@ -34,12 +34,14 @@
 
             <p>
                 <label for="firstname">First name:</label>
-                <input type="text" id="firstname" name="firstname" maxlength="25" pattern="[A-Za-z ]{1,25}" required>
+                <input type="text" id="firstname" name="firstname"
+                       maxlength="25" pattern="[A-Za-z ]{1,25}" required>
             </p>
 
             <p>
                 <label for="lastname">Last name:</label>
-                <input type="text" id="lastname" name="lastname" maxlength="25" pattern="[A-Za-z ]{1,25}" required>
+                <input type="text" id="lastname" name="lastname"
+                       maxlength="25" pattern="[A-Za-z ]{1,25}" required>
             </p>
 
             <p>
@@ -53,12 +55,14 @@
 
             <p>
                 <label for="address">Street address:</label>
-                <input type="text" id="address" name="address" maxlength="40" required>
+                <input type="text" id="address" name="address"
+                       maxlength="40" required>
             </p>
 
             <p>
                 <label for="suburb">Suburb/town:</label>
-                <input type="text" id="suburb" name="suburb" maxlength="20" required>
+                <input type="text" id="suburb" name="suburb"
+                       maxlength="20" required>
             </p>
 
             <p>
@@ -78,12 +82,15 @@
 
             <p>
                 <label for="postcode">Postcode:</label>
-                <input type="text" id="postcode" name="postcode" maxlength="4" pattern="\d{4}" required>
+                <input type="text" id="postcode" name="postcode"
+                       maxlength="4" pattern="\d{4}" required>
             </p>
 
             <p>
                 <label for="phone">Phone number:</label>
-                <input type="text" id="phone" name="phone" maxlength="10" pattern="\d{10}" placeholder="0412345678" required>
+                <input type="text" id="phone" name="phone"
+                       maxlength="10" pattern="\d{10}"
+                       placeholder="0412345678" required>
             </p>
         </fieldset>
 
@@ -103,48 +110,50 @@
         </fieldset>
 
         <fieldset>
-            <legend>Product details</legend>
+            <legend>AI accounting service details</legend>
 
             <p>
-                <label for="product">Product:</label>
+                <label for="product">Plan:</label>
                 <select id="product" name="product" required>
                     <option value="">Please select</option>
-                    <option value="standard">Standard Package</option>
-                    <option value="premium">Premium Package</option>
-                    <option value="deluxe">Deluxe Package</option>
+                    <option value="basic">Basic plan</option>
+                    <option value="standard">Standard plan</option>
+                    <option value="pro">Pro plan</option>
                 </select>
             </p>
 
-            <p>Product features:</p>
+            <p>What would you like help with</p>
 
             <p class="feature-options">
-                <input type="checkbox" id="feature1" name="features[]" value="feature1" checked>
-                <label for="feature1">Feature 1</label>
+                <input type="checkbox" id="feature_receipts" name="features[]" value="receipts" checked>
+                <label for="feature_receipts">Storing and sorting receipts</label>
 
-                <input type="checkbox" id="feature2" name="features[]" value="feature2">
-                <label for="feature2">Feature 2</label>
+                <input type="checkbox" id="feature_payments" name="features[]" value="payments">
+                <label for="feature_payments">Keeping track of payments</label>
 
-                <input type="checkbox" id="feature3" name="features[]" value="feature3">
-                <label for="feature3">Feature 3</label>
+                <input type="checkbox" id="feature_reports" name="features[]" value="reports">
+                <label for="feature_reports">Simple monthly reports</label>
+
+                <input type="checkbox" id="feature_budgets" name="features[]" value="budgets">
+                <label for="feature_budgets">Basic budget summaries</label>
             </p>
 
             <p>
                 <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" placeholder="Add any details you want us to know."></textarea>
+                <textarea id="comments" name="comments"
+                          placeholder="Tell us about your business and any questions about the Basic, Standard or Pro plans."></textarea>
             </p>
         </fieldset>
 
         <p>
-            <input type="submit" value="Submit Enquiry">
+            <input type="submit" value="Submit enquiry">
         </p>
 
     </form>
-
 </main>
 
 <footer class="site-footer">
-    <p>&copy; 2025 Your Website. All rights reserved.</p>
+    <p>&copy; 2025 *unnamed* AI. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
