@@ -1,4 +1,136 @@
 /* start of about style sheet */
+/* Global Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #111122 0%, #000000 70%);
+    color: #D6F4ED;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+.site-header {
+    background: linear-gradient(135deg, #473472, #000000 70%);
+    color: #D6F4ED;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #87BAC3;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .25s, border-color .25s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #87BAC3;
+    border-bottom: 2px solid #87BAC3;
+}
+
+/* Content Area */
+.content {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+/* Student Sections */
+.student {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #473472;
+}
+
+.student figure {
+    text-align: center;
+}
+
+.student img {
+    max-width: 180px;
+    border-radius: 10px;
+    border: 2px solid #53629E;
+    display: block;
+    margin: 0 auto;
+}
+
+.student figcaption {
+    margin-top: .5rem;
+    font-style: italic;
+    color: #87BAC3;
+}
+
+/* Enhancements: fade-in effect */
+.student {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards ease-in-out;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Schedule Tables */
+table.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #111122;
+    border: 1px solid #53629E;
+    border-radius: 8px;
+}
+
+table.schedule th,
+table.schedule td {
+    padding: 12px;
+    border-bottom: 1px solid #2f2f4a;
+    text-align: left;
+}
+
+table.schedule thead th {
+    background-color: #473472;
+    color: #FFFFFF;
+}
+
+table.schedule tbody tr:nth-child(even) {
+    background-color: #181824;
+}
+
+table.schedule tbody tr:hover {
+    background-color: #25253a;
+    transition: 0.2s;
+}
+
+/* Headings */
+h1 {
+    font: small-caps 2.2rem "Segoe UI", Arial, sans-serif;
+    color: #ffffff;
+}
+h2 {
+    color: #FFFFFF;
+    margin-top: 1.5rem;
+}
+h3 {
+    color: #87BAC3;
+}
 
 /* end of about style sheet */
 
