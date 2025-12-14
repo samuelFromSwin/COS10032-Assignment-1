@@ -20,12 +20,8 @@
      .index   header img {
              max-width: 200px;
               margin-top: 10px;
-        }
-
-      .index  header img {
-            max-width: 200px;
-            margin-top: 10px;
-        }
+              border-radius: 200px;
+     }
 
       .index  nav {
             background-color: black;
