@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>EZ-Accounting - Enquiry</title>
-    <link rel="stylesheet" href="enquiry style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="site-header">
@@ -23,14 +24,16 @@
 <main class="content">
     <div class="enquiry-page">
         <h1>Enquire about EZ-Accounting</h1>
+
         <p>
-            Use this form to ask questions about our AI accounting service. You can tell us a bit
-            about your business, which plan you are interested in and what sort of help you would like.
+            Use this form to ask questions about our AI accounting service.
+            Tell us about your business, the plan you are interested in,
+            and the type of support you need.
         </p>
 
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 
-            // users details section//
+            <!-- users details section -->
             <fieldset>
                 <legend>Your details</legend>
 
@@ -51,16 +54,17 @@
 
                 <p>
                     <label for="postcode">Postcode</label>
-                    <input type="text"
-                           id="postcode"
-                           name="postcode"
-                           pattern="^\d{4}$"
-                           maxlength="4"
-                           required>
+                    <input
+                        type="text"
+                        id="postcode"
+                        name="postcode"
+                        pattern="^\d{4}$"
+                        maxlength="4"
+                        required>
                 </p>
             </fieldset>
 
-            // business section//
+            <!-- business section -->
             <fieldset>
                 <legend>Business information</legend>
 
@@ -91,7 +95,7 @@
                 </p>
             </fieldset>
 
-            // enquiry section//
+            <!-- enquiry section -->
             <fieldset>
                 <legend>Your enquiry</legend>
 
@@ -118,10 +122,11 @@
 
                 <p>
                     <label for="message">Enquiry details</label>
-                    <textarea id="message"
-                              name="message"
-                              placeholder="Tell us what you need help with..."
-                              required></textarea>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us what you need help with..."
+                        required></textarea>
                 </p>
 
                 <p>
@@ -133,8 +138,11 @@
                 </p>
             </fieldset>
 
-            <input type="submit" value="Submit enquiry">
-            <input type="reset" value="Reset">
+            <p>
+                <input type="submit" value="Submit enquiry">
+                <input type="reset" value="Reset">
+            </p>
+
         </form>
     </div>
 </main>
@@ -145,4 +153,3 @@
 
 </body>
 </html>
-
