@@ -138,8 +138,9 @@ h3 {
 
 /* end of enhancments style sheet */
 
-/* start of enquire style sheet */
 
+
+/* start of enquiry style sheet */
 
 .enquiry-page {
     background-color: #111122;
@@ -245,6 +246,14 @@ h3 {
     margin-right: 0.75rem;
 }
 
+/* logo styling for enquiry page */
+
+.site-header .logo img {
+    height: 48px;
+    width: auto;
+    display: block;
+}
+
 /* mobile layout */
 @media screen and (max-width: 700px) {
     .enquiry-page {
@@ -271,7 +280,12 @@ h3 {
         display: flex;
         margin-right: 0;
     }
+
+    .site-header .logo img {
+        height: 38px;
+    }
 }
+
 
 
 /* end of enquiry style sheet */
