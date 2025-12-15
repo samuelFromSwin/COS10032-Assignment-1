@@ -142,8 +142,6 @@ h3 {
 
 /* start of enquiry style sheet */
 
-/* enquiry page styles only */
-
 .enquiry-page {
     background-color: #111122;
     border-radius: 10px;
@@ -252,14 +250,14 @@ h3 {
     margin-right: 0.75rem;
 }
 
-/* logo sizing */
+/* logo sizing on enquiry page */
 .site-header .logo img {
     height: 48px;
     width: auto;
     display: block;
 }
 
-/* mobile */
+/* mobile layout */
 @media screen and (max-width: 700px) {
     .enquiry-page {
         padding: 1.4rem;
@@ -290,6 +288,7 @@ h3 {
         height: 38px;
     }
 }
+
 
 
 /* end of enquiry style sheet */
