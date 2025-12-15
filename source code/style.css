@@ -140,7 +140,145 @@ h3 {
 
 /* start of enquire style sheet */
 
-/* end of enquire style sheet */
+
+.enquiry-page {
+    background-color: #111122;
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0 20px rgba(135, 186, 195, 0.25);
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+.enquiry-page h1 {
+    margin: 0 0 0.75rem 0;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.enquiry-page > p {
+    margin: 0 0 1.5rem 0;
+    color: #D6F4ED;
+    font-size: 1rem;
+}
+
+.enquiry-page form {
+    max-width: 720px;
+}
+
+.enquiry-page fieldset {
+    border: 1px solid #53629E;
+    border-radius: 8px;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 1.5rem;
+    background-color: #0a0a18;
+}
+
+.enquiry-page legend {
+    padding: 0 0.4rem;
+    color: #87BAC3;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.enquiry-page p {
+    margin: 0 0 1rem 0;
+}
+
+.enquiry-page label {
+    display: inline-block;
+    min-width: 170px;
+    color: #D6F4ED;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.enquiry-page input[type="text"],
+.enquiry-page input[type="email"],
+.enquiry-page input[type="tel"],
+.enquiry-page select,
+.enquiry-page textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    padding: 0.45rem 0.55rem;
+    border-radius: 6px;
+    border: 1px solid #53629E;
+    background-color: #111122;
+    color: #D6F4ED;
+    width: 60%;
+    max-width: 340px;
+    box-sizing: border-box;
+}
+
+.enquiry-page textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.feature-options label {
+    min-width: auto;
+    margin-right: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.enquiry-page input:focus,
+.enquiry-page select:focus,
+.enquiry-page textarea:focus {
+    outline: none;
+    border-color: #87BAC3;
+    box-shadow: 0 0 0 2px rgba(135, 186, 195, 0.35);
+}
+
+.enquiry-page input[type="submit"],
+.enquiry-page input[type="reset"] {
+    background-color: #473472;
+    color: #ffffff;
+    border: 1px solid #87BAC3;
+    padding: 0.6rem 1.8rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 0.5rem;
+    margin-right: 0.75rem;
+}
+
+/* mobile layout */
+@media screen and (max-width: 700px) {
+    .enquiry-page {
+        padding: 1.4rem;
+        margin: 2rem 1rem;
+    }
+
+    .enquiry-page label {
+        display: block;
+        margin-bottom: 0.25rem;
+        min-width: 0;
+    }
+
+    .enquiry-page input[type="text"],
+    .enquiry-page input[type="email"],
+    .enquiry-page input[type="tel"],
+    .enquiry-page select,
+    .enquiry-page textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .feature-options label {
+        display: flex;
+        margin-right: 0;
+    }
+}
+
+/* end of enquiry style sheet */
+
 
 /* start of index style sheet */
 
