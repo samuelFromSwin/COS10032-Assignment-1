@@ -1,13 +1,14 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> EZ-Accounting - Enquiry</title>
+    <title>EZ-Accounting - Enquiry</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="site-header">
-    <div class="logo">EZ-Accounting div>
+    <div class="logo">EZ-Accounting</div>
     <nav class="main-nav">
         <ul>
             <li><a href="index.html">Index</a></li>
@@ -21,7 +22,7 @@
 
 <main class="content">
     <div class="enquiry-page">
-        <h1>Enquire about EZ-Accounting/h1>
+        <h1>Enquire about EZ-Accounting</h1>
         <p>
             Use this form to ask questions about our AI accounting service. You can tell us a bit
             about your business, which plan you are interested in and what sort of help you would like.
@@ -45,7 +46,7 @@
 
                 <p>
                     <label for="phone">Phone number</label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required>
                 </p>
 
                 <p>
@@ -53,7 +54,7 @@
                     <input type="text"
                            id="postcode"
                            name="postcode"
-                           pattern="[0-9]{4}"
+                           pattern="^\d{4}$"
                            maxlength="4"
                            required>
                 </p>
@@ -73,7 +74,7 @@
                     <select id="business-type" name="business_type" required>
                         <option value="">Please select</option>
                         <option value="sole-trader">Sole trader</option>
-                        <option value="small-team">Small team (2–10 staff)</option>
+                        <option value="small-team">Small team (2 to 10 staff)</option>
                         <option value="online-shop">Online shop</option>
                         <option value="not-for-profit">Not-for-profit or community group</option>
                         <option value="other">Other</option>
@@ -83,9 +84,9 @@
                 <p>
                     <label>Plan you are interested in</label>
                     <span class="feature-options">
-                        <label><input type="radio" name="plan" value="Basic" required> Basic</label>
-                        <label><input type="radio" name="plan" value="Standard"> Standard</label>
-                        <label><input type="radio" name="plan" value="Pro"> Pro</label>
+                        <label><input type="radio" name="plan" value="basic" required> Basic</label>
+                        <label><input type="radio" name="plan" value="standard"> Standard</label>
+                        <label><input type="radio" name="plan" value="pro"> Pro</label>
                     </span>
                 </p>
             </fieldset>
@@ -109,7 +110,7 @@
                     <select id="timeframe" name="timeframe" required>
                         <option value="">Please select</option>
                         <option value="this-month">This month</option>
-                        <option value="one-to-three-months">In 1–3 months</option>
+                        <option value="one-to-three-months">In 1 to 3 months</option>
                         <option value="three-plus-months">In more than 3 months</option>
                         <option value="just-looking">Just looking for now</option>
                     </select>
@@ -117,7 +118,10 @@
 
                 <p>
                     <label for="message">Enquiry details</label>
-                    <textarea id="message" name="message" placeholder="Tell us what you need help with..."></textarea>
+                    <textarea id="message"
+                              name="message"
+                              placeholder="Tell us what you need help with..."
+                              required></textarea>
                 </p>
 
                 <p>
@@ -130,12 +134,15 @@
             </fieldset>
 
             <input type="submit" value="Submit enquiry">
+            <input type="reset" value="Reset">
         </form>
     </div>
 </main>
 
 <footer class="site-footer">
-    <p>&copy; 2025  EZ-Accounting rights reserved.</p>
+    <p>&copy; 2025 EZ-Accounting. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
+
