@@ -162,10 +162,6 @@ h3 {
     font-size: 1rem;
 }
 
-.enquiry-page form {
-    max-width: 720px;
-}
-
 .enquiry-page fieldset {
     border: 1px solid #53629E;
     border-radius: 8px;
@@ -276,6 +272,7 @@ h3 {
         margin-right: 0;
     }
 }
+
 
 /* end of enquiry style sheet */
 
