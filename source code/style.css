@@ -142,6 +142,8 @@ h3 {
 
 /* start of enquiry style sheet */
 
+/* enquiry page styles only */
+
 .enquiry-page {
     background-color: #111122;
     border-radius: 10px;
@@ -232,6 +234,10 @@ h3 {
     box-shadow: 0 0 0 2px rgba(135, 186, 195, 0.35);
 }
 
+.form-buttons {
+    margin: 0;
+}
+
 .enquiry-page input[type="submit"],
 .enquiry-page input[type="reset"] {
     background-color: #473472;
@@ -246,15 +252,14 @@ h3 {
     margin-right: 0.75rem;
 }
 
-/* logo styling for enquiry page */
-
+/* logo sizing */
 .site-header .logo img {
     height: 48px;
     width: auto;
     display: block;
 }
 
-/* mobile layout */
+/* mobile */
 @media screen and (max-width: 700px) {
     .enquiry-page {
         padding: 1.4rem;
@@ -285,7 +290,6 @@ h3 {
         height: 38px;
     }
 }
-
 
 
 /* end of enquiry style sheet */
