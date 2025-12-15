@@ -1,135 +1,148 @@
-// enquiry page CSS styling //
-.enquiry-page {
-    background-color: #111122;
-    border-radius: 10px;
-    padding: 2rem 2.5rem;
-    box-shadow: 0 0 20px rgba(135, 186, 195, 0.25);
-    max-width: 900px;
-    margin: 3rem auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ-Accounting - Enquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.enquiry-page h1 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    color: #ffffff;
-    font-size: 2rem;
-}
+<body>
 
-.enquiry-page > p {
-    margin-bottom: 1.5rem;
-    color: #D6F4ED;
-    font-size: 1rem;
-}
+<header class="site-header">
+    <div class="logo">
+        <a href="Index.html">
+            <img src="images/AI Accounting Services.png" alt="AI Accounting Services logo">
+        </a>
+    </div>
 
-.enquiry-page form {
-    max-width: 720px;
-}
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Index.html">Index</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="enquiry.html" class="active">Enquire</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="enhancements.html">Enhancements</a></li>
+        </ul>
+    </nav>
+</header>
 
-// fieldset and legend styling//
-.enquiry-page fieldset {
-    border: 1px solid #53629E;
-    border-radius: 8px;
-    padding: 1.1rem 1.4rem;
-    margin-bottom: 1.5rem;
-    background-color: #0a0a18;
-}
+<main class="content">
+    <div class="enquiry-page">
+        <h1>Enquire about EZ-Accounting</h1>
 
-.enquiry-page legend {
-    padding: 0 0.4rem;
-    color: #87BAC3;
-    font-weight: 600;
-    font-size: 1rem;
-}
+        <p>
+            Use this form to ask questions about our AI accounting service. Tell us about your business,
+            the plan you are interested in, and the type of support you need.
+        </p>
 
-// spacing inside each enquiry section//
-.enquiry-page p {
-    margin: 0 0 1rem 0;
-}
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <!-- users details section -->
+            <fieldset>
+                <legend>Your details</legend>
 
-// label layout//
-.enquiry-page label {
-    display: inline-block;
-    min-width: 170px;
-    color: #D6F4ED;
-    font-weight: 600;
-    font-size: 0.95rem;
-}
+                <p>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
 
-// input, select and textarea styling//
-.enquiry-page input[type="text"],
-.enquiry-page input[type="email"],
-.enquiry-page select,
-.enquiry-page textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.95rem;
-    padding: 0.45rem 0.55rem;
-    border-radius: 6px;
-    border: 1px solid #53629E;
-    background-color: #111122;
-    color: #D6F4ED;
-    width: 60%;
-    max-width: 340px;
-}
+                <p>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-// message box//
-.enquiry-page textarea {
-    width: 100%;
-    max-width: 100%;
-    min-height: 120px;
-    resize: vertical;
-}
+                <p>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
 
-// checkboxes and radio options//
-.feature-options label {
-    min-width: auto;
-    margin-right: 1rem;
-    font-weight: 500;
-}
+                <p>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" pattern="^\d{4}$" maxlength="4" required>
+                </p>
+            </fieldset>
 
-// focus styling//
-.enquiry-page input:focus,
-.enquiry-page select:focus,
-.enquiry-page textarea:focus {
-    outline: none;
-    border-color: #87BAC3;
-    box-shadow: 0 0 0 2px rgba(135, 186, 195, 0.35);
-}
+            <!-- business section -->
+            <fieldset>
+                <legend>Business information</legend>
 
-// submit button//
-.enquiry-page input[type="submit"] {
-    background-color: #473472;
-    color: #ffffff;
-    border: 1px solid #87BAC3;
-    padding: 0.6rem 1.8rem;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    margin-top: 0.5rem;
-}
+                <p>
+                    <label for="business-name">Business name</label>
+                    <input type="text" id="business-name" name="business_name" required>
+                </p>
 
-.enquiry-page input[type="submit"]:hover {
-    background-color: #53629E;
-    box-shadow: 0 0 14px rgba(135, 186, 195, 0.5);
-}
+                <p>
+                    <label for="business-type">Type of business</label>
+                    <select id="business-type" name="business_type" required>
+                        <option value="">Please select</option>
+                        <option value="sole-trader">Sole trader</option>
+                        <option value="small-team">Small team (2 to 10 staff)</option>
+                        <option value="online-shop">Online shop</option>
+                        <option value="not-for-profit">Not-for-profit or community group</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
 
-// mobile layout//
-@media screen and (max-width: 700px) {
-    .enquiry-page {
-        padding: 1.4rem;
-        margin: 2rem 1rem;
-    }
+                <p>
+                    <label>Plan you are interested in</label>
+                    <span class="feature-options">
+                        <label><input type="radio" name="plan" value="basic" required> Basic</label>
+                        <label><input type="radio" name="plan" value="standard"> Standard</label>
+                        <label><input type="radio" name="plan" value="pro"> Pro</label>
+                    </span>
+                </p>
+            </fieldset>
 
-    .enquiry-page label {
-        display: block;
-        margin-bottom: 0.25rem;
-        min-width: 0;
-    }
+            <!-- enquiry section -->
+            <fieldset>
+                <legend>Your enquiry</legend>
 
-    .enquiry-page input[type="text"],
-    .enquiry-page input[type="email"],
-    .enquiry-page select {
-        width: 100%;
-        max-width: 100%;
-    }
-}
+                <p>
+                    <label>Features you would like to use</label>
+                    <span class="feature-options">
+                        <label><input type="checkbox" name="features[]" value="receipt-storage"> Receipt storage</label>
+                        <label><input type="checkbox" name="features[]" value="simple-reports"> Simple reports</label>
+                        <label><input type="checkbox" name="features[]" value="multi-location"> More than one location</label>
+                        <label><input type="checkbox" name="features[]" value="budget-help"> Basic budget help</label>
+                    </span>
+                </p>
+
+                <p>
+                    <label for="timeframe">When you plan to start</label>
+                    <select id="timeframe" name="timeframe" required>
+                        <option value="">Please select</option>
+                        <option value="this-month">This month</option>
+                        <option value="one-to-three-months">In 1 to 3 months</option>
+                        <option value="three-plus-months">In more than 3 months</option>
+                        <option value="just-looking">Just looking for now</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Enquiry details</label>
+                    <textarea id="message" name="message" placeholder="Tell us what you need help with..." required></textarea>
+                </p>
+
+                <p>
+                    <label>Preferred contact method</label>
+                    <span class="feature-options">
+                        <label><input type="radio" name="contact_method" value="email" required> Email</label>
+                        <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+                    </span>
+                </p>
+            </fieldset>
+
+            <p class="form-buttons">
+                <input type="submit" value="Submit enquiry">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 EZ-Accounting. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
