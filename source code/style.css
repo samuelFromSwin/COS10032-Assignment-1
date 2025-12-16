@@ -296,6 +296,83 @@ h3 {
 
 /* start of index style sheet */
 
+
+    body.index {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;     
+    display: flex;
+    flex-direction: column;
+}
+
+      .index  header {
+            background: linear-gradient(90deg, #473472, #53629E, #87BAC3, #D6F4ED);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+     .index   header img {
+             max-width: 200px;
+              margin-top: 10px;
+              border-radius: 200px;
+     }
+
+      .index  nav {
+            background-color: black;
+        }
+
+      .index  nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+      .index  nav ul li {
+            margin: 0 15px;
+        }
+
+      .index  nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+      .index  nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+ .index main {
+    flex: 1;    
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+      .index  main h2 {
+            margin-bottom: 30px;
+        }
+
+     .index   main p {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+.index footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
 /* end of index style sheet */
 
 /* start of product style sheet*/
