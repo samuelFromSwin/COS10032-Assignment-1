@@ -142,7 +142,7 @@ h3 {
 
 /* start of enquiry style sheet */
 
-.enquiry-page {
+main.enquiry-page {
     background-color: #111122;
     border-radius: 10px;
     padding: 2rem 2.5rem;
@@ -151,19 +151,51 @@ h3 {
     margin: 3rem auto;
 }
 
-.enquiry-page h1 {
+/* headings */
+
+main.enquiry-page h1 {
     margin: 0 0 0.75rem 0;
     color: #ffffff;
     font-size: 2rem;
 }
 
-.enquiry-page > p {
+main.enquiry-page > p {
     margin: 0 0 1.5rem 0;
     color: #D6F4ED;
     font-size: 1rem;
 }
 
-.enquiry-page fieldset {
+/* enquiry navigation
+   this is the index nav rewritten safely for enquiry */
+
+main.enquiry-page .main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+main.enquiry-page .main-nav ul li {
+    margin: 0 15px;
+}
+
+main.enquiry-page .main-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+main.enquiry-page .main-nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* form layout */
+
+main.enquiry-page fieldset {
     border: 1px solid #53629E;
     border-radius: 8px;
     padding: 1.1rem 1.4rem;
@@ -171,18 +203,18 @@ h3 {
     background-color: #0a0a18;
 }
 
-.enquiry-page legend {
+main.enquiry-page legend {
     padding: 0 0.4rem;
     color: #87BAC3;
     font-weight: 600;
     font-size: 1rem;
 }
 
-.enquiry-page p {
+main.enquiry-page p {
     margin: 0 0 1rem 0;
 }
 
-.enquiry-page label {
+main.enquiry-page label {
     display: inline-block;
     min-width: 170px;
     color: #D6F4ED;
@@ -190,11 +222,13 @@ h3 {
     font-size: 0.95rem;
 }
 
-.enquiry-page input[type="text"],
-.enquiry-page input[type="email"],
-.enquiry-page input[type="tel"],
-.enquiry-page select,
-.enquiry-page textarea {
+/* inputs */
+
+main.enquiry-page input[type="text"],
+main.enquiry-page input[type="email"],
+main.enquiry-page input[type="tel"],
+main.enquiry-page select,
+main.enquiry-page textarea {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95rem;
     padding: 0.45rem 0.55rem;
@@ -207,14 +241,16 @@ h3 {
     box-sizing: border-box;
 }
 
-.enquiry-page textarea {
+main.enquiry-page textarea {
     width: 100%;
     max-width: 100%;
     min-height: 120px;
     resize: vertical;
 }
 
-.feature-options label {
+/* radio and checkbox groups */
+
+main.enquiry-page .feature-options label {
     min-width: auto;
     margin-right: 1rem;
     font-weight: 500;
@@ -224,20 +260,24 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-.enquiry-page input:focus,
-.enquiry-page select:focus,
-.enquiry-page textarea:focus {
+/* focus states */
+
+main.enquiry-page input:focus,
+main.enquiry-page select:focus,
+main.enquiry-page textarea:focus {
     outline: none;
     border-color: #87BAC3;
     box-shadow: 0 0 0 2px rgba(135, 186, 195, 0.35);
 }
 
-.form-buttons {
+/* buttons */
+
+main.enquiry-page .form-buttons {
     margin: 0;
 }
 
-.enquiry-page input[type="submit"],
-.enquiry-page input[type="reset"] {
+main.enquiry-page input[type="submit"],
+main.enquiry-page input[type="reset"] {
     background-color: #473472;
     color: #ffffff;
     border: 1px solid #87BAC3;
@@ -250,42 +290,42 @@ h3 {
     margin-right: 0.75rem;
 }
 
-/* logo sizing on enquiry page */
-.site-header .logo img {
-    height: 48px;
-    width: auto;
-    display: block;
-}
-
 /* mobile layout */
+
 @media screen and (max-width: 700px) {
-    .enquiry-page {
+
+    main.enquiry-page {
         padding: 1.4rem;
         margin: 2rem 1rem;
     }
 
-    .enquiry-page label {
+    main.enquiry-page .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main.enquiry-page .main-nav ul li {
+        margin: 0.3rem 0;
+    }
+
+    main.enquiry-page label {
         display: block;
         margin-bottom: 0.25rem;
         min-width: 0;
     }
 
-    .enquiry-page input[type="text"],
-    .enquiry-page input[type="email"],
-    .enquiry-page input[type="tel"],
-    .enquiry-page select,
-    .enquiry-page textarea {
+    main.enquiry-page input[type="text"],
+    main.enquiry-page input[type="email"],
+    main.enquiry-page input[type="tel"],
+    main.enquiry-page select,
+    main.enquiry-page textarea {
         width: 100%;
         max-width: 100%;
     }
 
-    .feature-options label {
+    main.enquiry-page .feature-options label {
         display: flex;
         margin-right: 0;
-    }
-
-    .site-header .logo img {
-        height: 38px;
     }
 }
 
