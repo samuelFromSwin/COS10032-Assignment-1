@@ -140,6 +140,7 @@ h3 {
 
 
 
+
 /* start of enquiry style sheet */
 
 main.enquiry-page {
@@ -149,6 +150,10 @@ main.enquiry-page {
     box-shadow: 0 0 20px rgba(135, 186, 195, 0.25);
     max-width: 900px;
     margin: 3rem auto;
+
+    /* enhancement */
+    opacity: 0;
+    animation: fadeIn 0.8s forwards ease-in-out;
 }
 
 /* headings */
@@ -165,8 +170,7 @@ main.enquiry-page > p {
     font-size: 1rem;
 }
 
-/* enquiry navigation
-   this is the index nav rewritten safely for enquiry */
+/* enquiry navigation */
 
 main.enquiry-page .main-nav ul {
     list-style: none;
