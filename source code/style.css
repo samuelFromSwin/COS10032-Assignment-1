@@ -150,14 +150,15 @@ main.enquiry-page {
     box-shadow: 0 0 20px rgba(135, 186, 195, 0.25);
     max-width: 900px;
     margin: 3rem auto;
-
-    /* enhancement */
-    opacity: 0;
-    animation: fadeIn 0.8s forwards ease-in-out;
 }
 
 /* headings */
 
+main img {
+             max-width: 200px;
+              margin-top: 10px;
+              border-radius: 200px;
+     }
 main.enquiry-page h1 {
     margin: 0 0 0.75rem 0;
     color: #ffffff;
@@ -169,33 +170,41 @@ main.enquiry-page > p {
     color: #D6F4ED;
     font-size: 1rem;
 }
+header img {
+             max-width: 200px;
+              margin-top: 10px;
+              border-radius: 200px;
+              
+     }
+ 
+/* enquiry navigation
+   this is the main-nav.main-nav nav rewritten safely for enquiry */
 
-/* enquiry navigation */
+        nav.enquiry {
+            background-color: black;
+        }
 
-main.enquiry-page .main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 0;
-    margin: 0 0 2rem 0;
-    padding: 0;
-}
+        nav.enquiry ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
 
-main.enquiry-page .main-nav ul li {
-    margin: 0 15px;
-}
+        nav.enquiry ul li {
+            margin: 0 15px;
+        }
 
-main.enquiry-page .main-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
+        nav.enquiry ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
 
-main.enquiry-page .main-nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-}
+        nav.enquiry ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
 
 /* form layout */
 
