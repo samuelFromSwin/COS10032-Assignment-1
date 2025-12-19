@@ -350,6 +350,8 @@ main.enquiry-page input[type="reset"] {
 /* start of index style sheet */
 
 
+
+
     body.index {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -418,13 +420,27 @@ main.enquiry-page input[type="reset"] {
             font-size: 20px;
         }
 
+    .index main li {
+        list-style: none;
+    }
+     .index main li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 14px 20px;
+}
+
+.index main li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
 .index footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 30px 0;
 }
-
 
 /* end of index style sheet */
 
