@@ -13,7 +13,7 @@
     <!-- Site Navigation -->
     <header class="site-header">
         <div class="logo">Our Team</div>
-        <?php include 'nav.inc';?>
+        <?php include 'menu.inc';?>
     </header>
 
     <h1>About Us</h1>
