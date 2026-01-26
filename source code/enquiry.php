@@ -27,7 +27,7 @@
         We would love to learn more about your business and help you find the right plan for you and your team.
     </p>
 
-    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <form method="post" action="process_enquiry.php">
 
         <!-- your details -->
         <fieldset>
