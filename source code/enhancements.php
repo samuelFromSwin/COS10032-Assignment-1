@@ -13,15 +13,7 @@
 <header class="site-header">
     <h1>Enhancements Implemented</h1>
     <div class="logo">EZ-Accounting</div>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="enquiry.html">Enquire</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="enhancements.html" class="active">Enhancements</a></li>
-        </ul>
-    </nav>
+    <?php include 'nav.inc';?>
 </header>
 
 <main>
@@ -146,6 +138,7 @@ nav a:hover {
 
 </body>
 </html>
+
 
 
 
