@@ -8,7 +8,7 @@
 <body>
 <header class="site-header">
     <div class="logo">EZ-Accounting</div>
-    <?php include 'nav.inc';?>
+    <?php include 'menu.inc';?>
 </header>
 
 <main class="content">
