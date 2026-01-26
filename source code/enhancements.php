@@ -13,7 +13,7 @@
 <header class="site-header">
     <h1>Enhancements Implemented</h1>
     <div class="logo">EZ-Accounting</div>
-    <?php include 'nav.inc';?>
+    <?php include 'menu.inc';?>
 </header>
 
 <main>
@@ -138,6 +138,7 @@ nav a:hover {
 
 </body>
 </html>
+
 
 
 
