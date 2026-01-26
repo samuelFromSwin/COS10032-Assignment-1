@@ -18,15 +18,7 @@
 <main class="content enquiry-page">
     <img src="images/AI Accounting Services.png" class="enquiry" alt="AI Accounting Services Logo">
 
-    <nav class="enquiry main-nav">
-        <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="enquiry.html" class="active">Enquire</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="enhancements.html">Enhancements</a></li>
-        </ul>
-    </nav>
+    <?php include 'nav.inc';?>
 
     <h1>Enquire about EZ-Accounting</h1>
 
