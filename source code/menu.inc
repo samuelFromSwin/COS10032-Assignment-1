@@ -5,5 +5,6 @@
             <li class="main-nav"><a href="enquiry.php">Enquire</a></li>
             <li class="main-nav"><a href="about.php">About</a></li>
             <li class="main-nav"><a href="enhancements.php">Enhancements</a></li>
+            <li class="main-nav"><a href="manager.php">Manager</a></li>
         </ul>
 </nav>
